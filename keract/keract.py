@@ -345,8 +345,7 @@ def display_activations(activations, cmap=None, save=False, directory='.',
         fig.suptitle(layer_name)
         fig.subplots_adjust(right=0.8)
         cbar = fig.add_axes([0.85, 0.15, 0.03, 0.7])
-        #fig.colorbar(hmap, cax=cbar)
-        fig.colorbar(hmap)
+        fig.colorbar(hmap, cax=cbar)
         if save:
             if not os.path.exists(directory):
                 os.makedirs(directory)
